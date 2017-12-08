@@ -1,11 +1,85 @@
-html { font-family: 'Open Sans', sans-serif; }
-body { font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, clean, sans-serif; }
-.form-simple label, .form-simple .fieldset-inner .legend-wrap, .repeater-heading { font-weight: bold; }
-.js .divider div { font-weight: bold; font-size: 1.15rem; }
-.repeater { margin-left: 72px; border-bottom: 1px solid #ccc; }
-a.primary:link, a.primary:visited, .primary { font-weight: bold; }
+/* CSS color variables */
+:root {
+  --main-admin-color: rgba(211, 211, 211, 0.63);
+  --accent-admin-color: rgb(253, 253, 253);
+  --button-color: rgb(118, 150, 204);
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Header background colour for main page content boxes */
+.dash-content header {
+  background-color: var(--main-admin-color);
+}
+
+.form-simple label,
+.form-simple .fieldset-inner .legend-wrap,
+.repeater-heading {
+  font-weight: bold;
+}
+
+/* Color for admin dividers */
+.divider, .ui-sortable-handle, .smartbar {
+  font-weight: bold;
+  font-size: 1.15em;
+  background-color: var(--main-admin-color) !important;
+}
+
+/* Better definition for repeater */
+.repeater {
+  margin-left: 72px;
+  border: 1px solid var(--main-admin-color);
+}
+
+.repeated-fields {
+    border-bottom: 1px dashed var(--main-admin-color);
+    background-color: var(--accent-admin-color);
+}
+
+/* Outline for blocks add bar */
+.block-add-bar {
+  border: 1px solid var(--main-admin-color);
+  padding: 10px;
+}
+
+
+a.primary:link,
+a.primary:visited,
+.primary {
+  font-weight: bold;
+}
+
+/* Button border and background colour */
 .title-panel .button,
 .button.to-the-top,
-.title-panel .button.button-icon { background-color: #6db0ae; border: 1px solid #418f8c; color: #fff; }
+.button.button-small.button-icon.icon-left.action-info,
+.title-panel .button.button-icon {
+  background-color: var(--button-color);
+  border: 1px solid var(-var(--button-color));
+  color: var(--accent-admin-color);
+}
+
+/* Button text and fill colour */
 .button.to-the-top.button-icon svg,
-.title-panel .button.button-icon svg { fill: #fff; }
+.title-panel .button.button-icon svg,
+.button.button-small.button-icon.icon-left.action-info,
+.button.button-small.button-icon.icon-left.action-info svg,
+.button.to-the-top.button-icon  span,
+.title-panel .button.button-icon  span {
+  fill: var(--accent-admin-color);
+  color: var(--accent-admin-color);
+  font-weight: bold;
+}
+
+/* Lighter color for smartbar active tab */
+.tab-active {
+  background-color: var(--accent-admin-color) !important;
+  border-bottom-color: var(--main-admin-color) !important
+}

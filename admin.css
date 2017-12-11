@@ -1,6 +1,6 @@
 /* CSS color variables */
 :root {
-    --main-admin-color: rgba(211, 211, 211, 0.63);
+  --main-admin-color: rgba(211, 211, 211, 0.63);
   --accent-admin-color: rgb(253, 253, 253);
   --dark-admin-color: #4d4d4d;
   --button-color: rgb(118, 150, 204);

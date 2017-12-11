@@ -1,7 +1,8 @@
 /* CSS color variables */
 :root {
-  --main-admin-color: rgba(211, 211, 211, 0.63);
+    --main-admin-color: rgba(211, 211, 211, 0.63);
   --accent-admin-color: rgb(253, 253, 253);
+  --dark-admin-color: #4d4d4d;
   --button-color: rgb(118, 150, 204);
 }
 
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Header background colour for main page content boxes */
@@ -19,6 +20,7 @@ body {
   background-color: var(--main-admin-color);
 }
 
+/* Bold text for various various headings labels and taskbars */
 .form-simple label,
 .form-simple .fieldset-inner .legend-wrap,
 .repeater-heading {
@@ -26,30 +28,47 @@ body {
 }
 
 /* Color for admin dividers */
-.divider, .ui-sortable-handle, .smartbar {
+.divider,
+.ui-sortable-handle,
+.smartbar {
   font-weight: bold;
   font-size: 1.15em;
   background-color: var(--main-admin-color) !important;
 }
 
+.divider,
+.smartbar {
+  outline: 1px solid var(--dark-admin-color);
+}
+
 /* Better definition for repeater */
 .repeater {
   margin-left: 72px;
+  border-bottom: 0;
+}
+
+.repeated-item {
+  margin-bottom: .5rem;
   border: 1px solid var(--main-admin-color);
+
 }
 
 .repeated-fields {
-    border-bottom: 1px dashed var(--main-admin-color);
-    background-color: var(--accent-admin-color);
+  background-color: var(--accent-admin-color);
+}
+
+.repeater-footer {
+  border: 1px solid var(--main-admin-color);
 }
 
 /* Outline for blocks add bar */
 .block-add-bar {
-  border: 1px solid var(--main-admin-color);
+  border: 1px solid var(--dark-admin-color);
   padding: 10px;
 }
 
 
+/* Making link text more visible */
 a.primary:link,
 a.primary:visited,
 .primary {
@@ -78,8 +97,24 @@ a.primary:visited,
   font-weight: bold;
 }
 
+
+/* Adjusting smartbar and divider icon position for larger fonts */
+.smartbar a svg, .smartbar button svg {
+  margin-top: 6px;
+}
+
+.divider-toggle {
+  position: relative;
+  bottom: 4px;
+}
+
 /* Lighter color for smartbar active tab */
 .tab-active {
   background-color: var(--accent-admin-color) !important;
-  border-bottom-color: var(--main-admin-color) !important
+}
+
+/* Hides markitup header so users don't format embedded code. */
+div.markItUpHeader {
+  display: none;
+  visibility: hidden;
 }

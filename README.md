@@ -1,6 +1,6 @@
 # Perch Admin Theme
 
-This 'theme' adds a little more contrast and visual heirachy to the Perch UI. Still a work in progress.
+This 'theme' adds a little more contrast and visual hierarchy to the Perch UI. Still a work in progress.
 
 # How to
 

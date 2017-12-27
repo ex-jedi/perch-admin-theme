@@ -112,9 +112,3 @@ a.primary:visited,
 .tab-active {
   background-color: var(--accent-admin-color) !important;
 }
-
-/* Hides markitup header so users don't format embedded code. */
-div.markItUpHeader {
-  display: none;
-  visibility: hidden;
-}

@@ -1,9 +1,9 @@
 /* CSS color variables */
 :root {
-  --main-admin-color: rgba(211, 211, 211, 0.63);
+  --main-admin-color: #cecdcd;
   --accent-admin-color: rgb(253, 253, 253);
   --dark-admin-color: #4d4d4d;
-  --button-color: rgb(118, 150, 204);
+  --button-color: #8aaef1;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 /* Header background colour for main page content boxes */
@@ -20,7 +20,6 @@ body {
   background-color: var(--main-admin-color);
 }
 
-/* Bold text for various various headings labels and taskbars */
 .form-simple label,
 .form-simple .fieldset-inner .legend-wrap,
 .repeater-heading {
@@ -57,18 +56,21 @@ body {
   background-color: var(--accent-admin-color);
 }
 
+.repeated-fields .divider {
+  margin-top: 10px;
+}
+
 .repeater-footer {
   border: 1px solid var(--main-admin-color);
 }
 
 /* Outline for blocks add bar */
 .block-add-bar {
-  border: 1px solid var(--dark-admin-color);
+  border: 1px solid var(--main-admin-color);
   padding: 10px;
 }
 
 
-/* Making link text more visible */
 a.primary:link,
 a.primary:visited,
 .primary {
@@ -103,6 +105,16 @@ a.primary:visited,
   margin-top: 6px;
 }
 
+/* Gives background color to selected filter */
+.smartbar-filters .tab-active {
+  background-color:  var(--main-admin-color) !important;
+}
+
+/* Better spacing for action bar filter buttons */
+.smartbar-filters .smartbar-actions {
+  margin-left: 10px;
+}
+
 .divider-toggle {
   position: relative;
   bottom: 4px;
@@ -111,4 +123,5 @@ a.primary:visited,
 /* Lighter color for smartbar active tab */
 .tab-active {
   background-color: var(--accent-admin-color) !important;
+  color: #4d4d4d !important;
 }

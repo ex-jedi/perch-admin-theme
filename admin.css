@@ -1,18 +1,18 @@
 /* CSS color variables */
 :root {
   --main-admin-color: #cecdcd;
-  --accent-admin-color: rgb(253, 253, 253);
+  --accent-admin-color: #fdfdfd;
   --dark-admin-color: #4d4d4d;
   --button-color: #8aaef1;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 /* Header background colour for main page content boxes */
@@ -47,9 +47,8 @@ body {
 }
 
 .repeated-item {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   border: 1px solid var(--main-admin-color);
-
 }
 
 .repeated-fields {
@@ -64,12 +63,17 @@ body {
   border: 1px solid var(--main-admin-color);
 }
 
+/* Field Group */
+.field-group {
+  outline: 1px solid var(--main-admin-color);
+  margin: 0 24px 12px 24px;
+}
+
 /* Outline for blocks add bar */
 .block-add-bar {
   border: 1px solid var(--main-admin-color);
   padding: 10px;
 }
-
 
 a.primary:link,
 a.primary:visited,
@@ -92,22 +96,22 @@ a.primary:visited,
 .title-panel .button.button-icon svg,
 .button.button-small.button-icon.icon-left.action-info,
 .button.button-small.button-icon.icon-left.action-info svg,
-.button.to-the-top.button-icon  span,
-.title-panel .button.button-icon  span {
+.button.to-the-top.button-icon span,
+.title-panel .button.button-icon span {
   fill: var(--accent-admin-color);
   color: var(--accent-admin-color);
   font-weight: bold;
 }
 
-
 /* Adjusting smartbar and divider icon position for larger fonts */
-.smartbar a svg, .smartbar button svg {
+.smartbar a svg,
+.smartbar button svg {
   margin-top: 6px;
 }
 
 /* Gives background color to selected filter */
 .smartbar-filters .tab-active {
-  background-color:  var(--main-admin-color) !important;
+  background-color: var(--main-admin-color) !important;
 }
 
 /* Better spacing for action bar filter buttons */
